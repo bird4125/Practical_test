@@ -27,14 +27,13 @@ ul,li{list-style: none;}
 #head_sec > .head_le{width: 200px;height: 100%;display: flex;align-items: center;}
 #head_sec > .head_le a .logo {width: 200px;height: 40px;background: url(../images/logo.png) no-repeat center / cover}
 
-#head_sec > .head_ri{width: 600px;height: 100%;position: relative}
-#head_sec > .head_ri > .menus{width: 100%;height: 100%;display: flex;justify-content: space-around;align-items: center;position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 30;background:  #FFB715}
-#head_sec > .head_ri > .menus a{width: 100%;height: 100%;;display: flex;justify-content: center;align-items: center;}
+#head_sec > .head_ri{width: 600px;height: 100%;}
+#head_sec > .head_ri > .menus{width: 600px;height: 100%;display: flex;justify-content: space-around;align-items: center;position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 30;background:  #FFB715;position: relative}
+#head_sec > .head_ri > .menus > div{width: 150px;height: 100%;display: flex;justify-content: space-between;align-items: center;position: relative}
+#head_sec > .head_ri > .menus > div ul{width: 150px;height: 200px;display: flex;flex-flow: column;position: absolute;left: 0;right: 0;top: 100px;bottom: 100px;justify-content: space-between;align-items: center;background: #faf}
+#head_sec > .head_ri > .menus > div ul li{width: 150px;height: 50px;text-align: center;line-height: 50px}
 
-#head_sec > .head_ri > .sub_me{width: 100%;height: 100%;display: flex;justify-content: space-around;align-items: center;position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 20}
-#head_sec > .head_ri > .sub_me ul{width: 100%;height: 150px; background: #faf;position: absolute;bottom: 0px;display: flex;justify-content: space-between}
-#head_sec > .head_ri > .sub_me li{width: 25%;height: 100%;display: flex;justify-content: space-between;flex-flow: column;}
-#head_sec > .head_ri > .sub_me >ul li a{width: 100%;height: 25%;display: flex;justify-content: center;align-items: center;}
+#head_sec > .head_ri > .menus > div a{width: 150px;height: 100%;display: flex;justify-content: center;align-items: center;position: absolute;left: 0;right: 0;top: 0;bottom: 0;}
 
 
 
