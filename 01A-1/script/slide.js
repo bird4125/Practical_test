@@ -12,5 +12,5 @@ $(document).ready(function () {
     if (pos === slideLength) {
       pos = 0
     }
-  }, 3000)
+  }, 2000)
 })

@@ -1,5 +1,5 @@
 /*charset_setting*/
-@charset "utf-8";
+@charset "UTF-8";
 
 /*main_color*/
 /* 메인컬러 : #FFB715 */
@@ -29,11 +29,15 @@ ul,li{list-style: none;}
 
 #head_sec > .head_ri{width: 600px;height: 100%;}
 #head_sec > .head_ri > .menus{width: 600px;height: 100%;display: flex;justify-content: space-around;align-items: center;position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 30;background:  #FFB715;position: relative}
-#head_sec > .head_ri > .menus > div{width: 150px;height: 100%;display: flex;justify-content: space-between;align-items: center;position: relative}
-#head_sec > .head_ri > .menus > div ul{width: 150px;height: 200px;display: flex;flex-flow: column;position: absolute;left: 0;right: 0;top: 100px;bottom: 100px;justify-content: space-between;align-items: center;background: #faf}
-#head_sec > .head_ri > .menus > div ul li{width: 150px;height: 50px;text-align: center;line-height: 50px}
+#head_sec > .head_ri > .menus > div{width: 150px;height: 100%;display: flex;align-items: center;position: relative;}
+#head_sec > .head_ri > .menus > div > div{width: 150px;height: 200px;display: flex;flex-flow: column;position: absolute;left: 0;right: 0;top: 100px;bottom: 100px;justify-content: space-between;align-items: center;background: #FFB715;z-index: 30;transition: .5s;}
+#head_sec > .head_ri > .menus > div > div a:hover{transition: .5s;background: #FFE708}
 
-#head_sec > .head_ri > .menus > div a{width: 150px;height: 100%;display: flex;justify-content: center;align-items: center;position: absolute;left: 0;right: 0;top: 0;bottom: 0;}
+#head_sec > .head_ri > .menus > div > div.on{width: 150px;height: 200px;display: flex;flex-flow: column;position: absolute;left: 0;right: 0;top: -100px;bottom: 100px;justify-content: space-between;align-items: center;background: #FFB715;z-index: 30;transition: .5s;}
+#head_sec > .head_ri > .menus > div > div > a{width: 150px;height: 50px;text-align: center;line-height: 50px}
+
+#head_sec > .head_ri > .menus > div > a:hover{background: #FFE708;transition: .5s}
+#head_sec > .head_ri > .menus > div > a{display: flex;justify-content: center;align-items: center;position: absolute;left: 0;right: 0;top: 0;bottom: 0;z-index: 40;background:#FFB715;transition: .5s}
 
 
 
