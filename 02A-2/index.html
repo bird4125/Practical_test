@@ -6,86 +6,124 @@
         <link href="css/css.css" type="text/css" rel="stylesheet">
         <script src="script/jquery-3.4.0.js"></script>
         <script src="script/menu.js"></script>
+        <script src="script/modal.js"></script>
         <script src="script/slide.js"></script>
     </head>
     <body>
         <div id="wrap">
+            <!--MODAL_LAYER_POPUP-->
+            <div class="modal">
+                <div class="in_mo">
+                    <p class="m_notice">공지사항</p>
+                    <div class="m_content">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        d do eiusmod tempor incididunt ut l
+                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.cillum dolore eu fugiat nulla pariatur. 
+                        d do eiusmod tempor incididunt ut lExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                    <a href="#" class="m_close" onclick="m_close()">X 닫기</a>
+                </div>
+            </div>
             <!--section_partA-->
             <section class="c_a">
                 <div class="logo_part">
-                    <div class="logo"></div>
+                    <a href="#">
+                        <div class="logo"></div>
+                    </a>
                 </div>
                 <div class="menus">
                     <ul class="menu_wrap">
                         <li>
-                            <a href="#">MENU</a>
+                            <a href="#">재단소개</a>
                         </li>
                         <li>
-                            <a href="#">MENU</a>
+                            <a href="#">후원하기</a>
                         </li>
                         <li>
-                            <a href="#">MENU</a>
+                            <a href="#">자료실</a>
                         </li>
                         <li>
-                            <a href="#">MENU</a>
+                            <a href="#">스토리</a>
                         </li>
                     </ul>
-                    <ul class="sub_wrap">
-                        <li>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                        </li>
-                        <li>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                        </li>
-                        <li>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                        </li>
-                        <li>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                            <a href="#">I_AM_SUB</a>
-                        </li>
-                    </ul>
-                    
                 </div>
+                <div class="layer">
+                        <ul class="sub_wrap">
+                            <li>
+                                <a href="#">설립취지</a>
+                                <a href="#">연혁</a>
+                                <a href="#">찾아오시는길</a>
+                            </li>
+                            <li>
+                                <a href="#">국내후원</a>
+                                <a href="#">국외후원</a>
+                                <a href="#">맞춤후원</a>
+                            </li>
+                            <li>
+                                <a href="#">서식자료실</a>
+                                <a href="#">사진자료실</a>
+                                <a href="#">후원양식</a>
+                            </li>
+                            <li>
+                                <a href="#">웹진</a>
+                                <a href="#">보고서</a>
+                                <a href="#">나의 후원</a>
+                            </li>
+                        </ul>
+                    </div>
             </section>
             
             <!--section_partB-->
             <section class="c_b">
-                <ul class="slide">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="slide">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
             </section>
             
             <!--section_partC-->
             <section class="c_c">
-                <div class="C1"></div>
+                <div class="c1">
+                    <div class="inside">
+                        <p class="notice">공지사항</p>
+                        <div class="list">
+                            <a href="#" onclick="m_open()">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="c2">
+                    <div class="inside">
+                        <p class="notice">갤러리</p>
+                        <div class="gall">
+                            <a href="#"><div></div></a>
+                            <a href="#"><div></div></a>
+                            <a href="#"><div></div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="c3">
+                    <a href="#"><div class="inside banner"></div></a>
+                </div>
             </section>
             
             <!--section_partD-->
             <section class="c_d">
                 <div class="box1">
-                    GREEN_
-                    <br>
-                    복지재단
+                    <a href="#"><div class="logo_g"></div></a>
                 </div>
                 <div class="box2">
-                    COPY
+                    COPYRIGHT &copy; 2019 SNIPE ALLRIGHT RESERVED.
                 </div>
                 <div class="box3">
-                    FAMILY_
+                    <a href="#">FAMILY_1</a>
+                    <a href="#">FAMILY_2</a>
+                    <a href="#">FAMILY_3</a>
                 </div>
             </section>
         </div>
