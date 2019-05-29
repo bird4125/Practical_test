@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>산업대학교</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css">
+        <script src="./scripts/jquery-1.12.4.js"></script>
+        <script src="./scripts/modal.js"></script>
+        <script src="./scripts/menu.js"></script>
+        <script src="./scripts/slide.js"></script>
+    </head>
+    <body>
+        <div class="modal">
+            <div class="modal_wrap">
+                <div class="m_notice">
+                    <p>공지사항</p>
+                </div>
+                <div class="m_contents">
+                    <p>lorem ipsum dolor sit amet</p>
+                    <p>lorem ipsum dolor sit amet</p>
+                    <p>lorem ipsum dolor sit amet</p>
+                    <p>lorem ipsum dolor sit amet</p>
+                    <p>lorem ipsum dolor sit amet</p>
+                    <p>lorem ipsum dolor sit amet</p>
+                    <p>lorem ipsum dolor sit amet</p>
+                </div>
+                <a href="#" onclick="m_close()" class="m_close">닫기 X </a>
+            </div>
+        </div>
+        <div id="wrap">
+            <!-- section_a -->
+            <div class="sec_a">
+                <div class="wrap">
+                    <div class="logo_part">
+                        <a href="#">
+                            <img src="images/logo.png" alt="메인로고">
+                        </a>
+                    </div>
+                    <div class="menu_part">
+                        <ul class="menu_wrap">
+                            <li>
+                                <a href="#">대학소개</a>
+                            </li>
+                            <li>
+                                <a href="#">입학안내</a>
+                            </li>
+                            <li>
+                                <a href="#">정보서비스</a>
+                            </li>
+                            <li>
+                                <a href="#">커뮤니티</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sub_menu">
+                    <div class="sub_wrap">
+                        <ul>
+                            <li><a href="#">총장인사말</a></li>
+                            <li><a href="#">학교소개</a></li>
+                            <li><a href="#">홍보관</a></li>
+                            <li><a href="#">캠퍼스안내</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">수시모집</a></li>
+                            <li><a href="#">정시모집</a></li>
+                            <li><a href="#">편입학</a></li>
+                            <li><a href="#">재외국민</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">대학정보알림</a></li>
+                            <li><a href="#">정보공개</a></li>
+                            <li><a href="#">정보서비스안내</a></li>
+                            <!--<li><a href="#">SUB1</a></li>-->
+                        </ul>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">참여게시판</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <!--ㄴ-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- section_b -->
+            <div class="sec_b">
+                <div class="slide">
+                    <a href="#" class="on"><img src="images/slide1.jpg" alt="슬라이드_이미지_1"></a>
+                    <a href="#"><img src="images/slide2.jpg" alt="슬라이드_이미지_2"></a>
+                    <a href="#"><img src="images/slide3.jpg" alt="슬라이드_이미지_3"></a>
+                </div>
+            </div>
+            <!-- section_c -->
+            <div class="sec_c">
+                <div class="box1">
+                    <div class="wrap">
+                        <div class="title">
+                            <p>공지사항</p>
+                            <div class="circle"></div>
+                            
+                        </div>
+                        <div class="contents">
+                            <a href="#" onclick="m_open()">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                            <a href="#">lorem ipsum dolor sit amet</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="wrap">
+                        <div class="title">
+                            <p>갤러리</p>
+                            <div class="circle"></div>
+                        </div>
+                        <div class="contents">
+                            <a href="#">
+                                <img src="./images/gallery1.jpg" alt="갤러리사진1">
+                            </a>
+                            <a href="#">
+                                <img src="./images/gallery2.jpg" alt="갤러리사진2">
+                            </a>
+                            <a href="#">
+                                <img src="./images/gallery3.jpg" alt="갤러리사진3">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box3">
+                    <div class="wrap">
+                        <a href="#">
+                            <img src="./images/banner.jpg" alt="배너이미지">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- section_d -->
+            <div class="sec_d">
+                <div class="wrap">
+                    <div class="left">
+                        <div class="b_menu">
+                            <div class="wrap">
+                                <a href="#">대학소개</a>
+                                <a href="#">입학안내</a>
+                                <a href="#">정보서비스</a>
+                                <a href="#">커뮤니티</a>
+
+                            </div>
+                        </div>
+                        <div class="b_copy">
+                            COPYRIGHT &copy; 2019. S_N_I_P_E. All rights reserved.
+                        </div>
+                    </div>
+                    <div class="right">
+                        <select id="family">
+                            <option value="aa">@@대학교</option>
+                            <option value="aa">@@대학교</option>
+                            <option value="aa">@@대학교</option>
+                        </select>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>

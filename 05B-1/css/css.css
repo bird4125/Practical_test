@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* default_settings */
+*{margin: 0;padding: 0;color: #333333}
+a{color: #333333;text-decoration: none;}
+ul,li{list-style: none;}
+body{}
+
+
+/* m_color : #0076BE*/
+/* s_color : #E66B27*/
+/* f_color : #333333*/
+
+#wrap{width: 100%;height: 700px;background: #FFF;margin: 0 auto;}
+
+/* section_a */
+#wrap > .sec_a{width: 100%;height: 100px;background: #0076BE}
+#wrap > .sec_a > .in_wrap{width: 1200px;height: 100%;background: #0076BE;margin: 0 auto;display: flex;justify-content: space-between;align-items: center;}
+#wrap > .sec_a > .in_wrap > .logo_part{width: 200px;height: 100px;display: flex;align-items: center;}
+#wrap > .sec_a > .in_wrap > .logo_part > a{width: 200px;height:40px;}
+
+
+
+#wrap > .sec_a > .in_wrap > .menu_part{width: 600px; height: 100px;margin-right: 200px;position: relative}
+#wrap > .sec_a > .in_wrap > .menu_part > .main{width: 600px; height: 100px;display: flex;justify-content: space-around;align-items: center;background: #0076BE;position: relative;z-index: 50;background: #0076BE}
+#wrap > .sec_a > .in_wrap > .menu_part > .main > a{display: inline-block;width: 100%;height: 100px;text-align: center;line-height: 100px;position: relative;z-index: 40}
+#wrap > .sec_a > .in_wrap > .menu_part > .sub {position: absolute;width: 600px;height: 150px;justify-content: space-around;display: flex;top: -100px;z-index: 30}
+#wrap > .sec_a > .in_wrap > .menu_part > .sub li{display: flex;flex-flow: column;width: 150px;background: #0076BE;}
+#wrap > .sec_a > .in_wrap > .menu_part > .sub li:nth-child(1){height:200px;}
+#wrap > .sec_a > .in_wrap > .menu_part > .sub li:nth-child(2){height:200px;}
+#wrap > .sec_a > .in_wrap > .menu_part > .sub li a{display: inline-block;width: 100%;height: 50px;text-align: center;line-height: 50px;background: #0076BE;}
+
+
+
+/* section_b */
+
+#wrap > .sec_b{width: 100%;height: 300px;}
+#wrap > .sec_b > .in_wrap{width: 1200px;height: 100%;background: #33a;margin: 0 auto;overflow-x: hidden;}
+#wrap > .sec_b > .in_wrap > .slide {width: 3600px;height: 100%;display: flex;margin-left: 0%;transition: .3s}
+#wrap > .sec_b > .in_wrap > .slide a{width: 1200px; height: 100%;display: inline-block}
+#wrap > .sec_b > .in_wrap > .slide a:nth-child(1){background: url(../images/slide1.jpg) no-repeat center / cover}
+#wrap > .sec_b > .in_wrap > .slide a:nth-child(2){background: url(../images/slide2.jpg) no-repeat center / cover}
+#wrap > .sec_b > .in_wrap > .slide a:nth-child(3){background: url(../images/slide.jpg) no-repeat center / cover}
+
+
+
+/* section_c */
+
+#wrap > .sec_c{width: 100%;height: 200px;}
+#wrap > .sec_c > .in_wrap{width: 1200px;height: 100%;margin: 0 auto;display: flex;justify-content: space-between}
+#wrap > .sec_c > .in_wrap > div {height: 100%; display: flex;justify-content: center;align-items: center;background: #0076BE;}
+
+#wrap > .sec_c > .in_wrap > .c1 {width: 450px;}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap{width:440px;height:190px;background:#fff}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .title{width: 100%;height: 30px;display: flex;justify-content: space-between}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .title > div{width: 50%;height: 100%; display: flex;align-items: center;justify-content: center;}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .contents{width: 100%;height: calc(100% - 30px);position: relative;z-index: 20}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .contents > div{position: absolute;left: 0;right: 0;top:0;bottom: 0;}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .contents > .not{width: 100%;height: 100%;z-index: 40;background:#fff;display: flex;flex-flow: column;justify-content: space-around}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .contents > .not > a{display: flex;align-items: center;position: relative}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .contents > .not > a::before{content: '';width: 5px;height: 5px; border-radius: 0%;display: inline-block;background: #333;margin:0 10px;}
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .contents > .not > a::after{content: '';width: 80%;height: 1px; display: block;background: #333;margin:0 10px;position: absolute;bottom: -3px;}
+
+
+
+
+
+#wrap > .sec_c > .in_wrap > .c1 > .c_wrap > .contents > .gall{width: 100%;height: 100%;z-index: 30;background:#fff;display: flex; justify-content: space-around;align-items: center;}
+
+
+#wrap > .sec_c > .in_wrap > .c2 {width: 450px;}
+#wrap > .sec_c > .in_wrap > .c2 > .c_wrap{width:440px;height:190px;background:#fff}
+#wrap > .sec_c > .in_wrap > .c3 {width: 300px;}
+#wrap > .sec_c > .in_wrap > .c3 > .c_wrap{width:290px;height:190px;background:#fff}
+
+/* section_d */
+
+#wrap > .sec_d{width: 100%;height: 100px;background:#0091e9;}
+#wrap > .sec_d > .in_wrap{width: 1200px;height: 100%;margin: 0 auto;display: flex;}
+#wrap > .sec_d > .in_wrap > .d_left{width: 200px;height: 100px;display: flex;align-items: center;}
+#wrap > .sec_d > .in_wrap > .d_left > a{width: 200px;height:40px;}
+
+#wrap > .sec_d > .in_wrap > .d_right{width: 1000px;height:100%;display: flex;flex-flow: column;}
+#wrap > .sec_d > .in_wrap > .d_right > div{width: 100%;height: 50%;display: flex;align-items: center;}
+#wrap > .sec_d > .in_wrap > .d_right > .btm_menu{ justify-content: space-around}
+#wrap > .sec_d > .in_wrap > .d_right > .copy{ justify-content: center;font-size: 12px;}
+
+/* layer_popUp_section */
+
+.layer_popup{position: fixed;width: 500px;height: 350px;background: #0076BE;left: calc(50% - 250px);z-index: 100;top: calc(50% - 175px);display: flex;justify-content: center;align-items: center;z-index: -50;opacity: 0}
+.layer_popup > .layer_wrap{width: 490px;height: 340px;background: #fff;position: relative;}
+.layer_popup > .layer_wrap .layer_title{display: flex;align-items: center;height: 30px;border-bottom: 2.5px solid #0076BE}
+.layer_popup > .layer_wrap .layer_title::before{content: '';width: 10px;height: 10px;display: inline-block;background: #333;margin:0 10px;}
+.layer_popup > .layer_wrap .con {display: flex;flex-flow: column;margin-left: 30px;justify-content: space-around;height: 70%}
+.layer_popup > .layer_wrap .con a{position: relative}
+.layer_popup > .layer_wrap .con a::after{content: '';width: 80%;height: 1px; display: block;background: #333;position: absolute;bottom: -3px;}
+.layer_popup > .layer_wrap .layer_close{position: absolute;right: 5%;bottom: 5%;border: 1px solid #000;display: inline-block;padding: 2px 5px;}

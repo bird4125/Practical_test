@@ -3,7 +3,7 @@
 ul,li{list-style: none;}
 body{min-height: 100vh;width: 100%;}
 a{text-decoration: none;color: #333333}
-
+#family{width: 110px}
 /* 주조색 : #3cb149 */
 /* 보조색 : #1d8844 #434748*/
 
@@ -66,7 +66,8 @@ a{text-decoration: none;color: #333333}
 #wrap > .c_d > div{display:flex;align-items:center; justify-content:center;}
 #wrap > .c_d .box1 {width: 10%;background: #ddd}
 #wrap > .c_d .box2 {width: 80%;background: #ddd}
-#wrap > .c_d .box3 {width: 10%;background: #ddd;flex-flow: column;}
+#wrap > .c_d .box3 {width: 10%;background: #ddd;display: flex;flex-flow:column;}
+#wrap > .c_d .box3 p{width: 100%;text-align: center;margin: 10px 0px}
 
 #wrap > .c_d .box1 a {display: inline-block;width: 100%;height: 20px;display:flex;align-items:center; justify-content:center;}
 #wrap > .c_d .box1 .logo_g{width: 100%;height:100%;background:url(../images/logo_g.png) no-repeat center / cover}

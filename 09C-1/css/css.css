@@ -1,0 +1,33 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;}
+a{color: #333333;text-decoration: none;}
+ul,li{list-style: none;}
+#wrap{width: 1000px;height: 650px;background: #faa}
+
+
+#wrap > .left{width: 200px;height:100%;background: #999;float:left}
+/* section_a */
+#wrap > .left > .sec_a{width: 200px;height: 100%;}
+#wrap > .left > .sec_a > .logo_part{width: 200px;height: 100px;background: #afa}
+#wrap > .left > .sec_a > .menu_part{width: 200px;height: 400px;display: flex;justify-content: center;}
+#wrap > .left > .sec_a > .menu_part > .menu_wrap{width: 150px;display: flex;flex-flow: column;position: relative;margin-top: 50px;}
+#wrap > .left > .sec_a > .menu_part > .menu_wrap > li {width: 150px;height: 25px;display: flex;align-items: center;background: #888;border: 1px solid #999;transition: .5s;justify-content: center;}
+#wrap > .left > .sec_a > .menu_part > .menu_wrap > li > .sub{position: absolute;right: -150px;width: 150px;height: 200px;background: #fff;display: flex;flex-flow: column;z-index: -20;opacity: 0;transition: .5s}
+#wrap > .left > .sec_a > .menu_part > .menu_wrap > li > .sub > a{width: 150px;height: 25px;border-top: 1px solid #000;border-bottom: 1px solid #000;box-sizing: border-box;text-align: center;}
+
+
+#wrap > .right{width: 800px;height:100%;background: #998;float:right;}
+#wrap > .right > div{width: 100%}
+/* section_b */
+#wrap > .right > .sec_b{height: 350px;background: #a66;}
+#wrap > .right > .sec_b > .slide{width: 100%;height: 100%;position: relative;}
+#wrap > .right > .sec_b > .slide a{width: 100%;height: 100%;position: absolute;display: inline-block;left: 0;right: 0;top: 0;bottom: 0;opacity: 1;}
+
+#wrap > .right > .sec_b > .slide a:nth-child(1){background: url(../images/slide.jpg) no-repeat center / cover;}
+#wrap > .right > .sec_b > .slide a:nth-child(2){background: url(../images/slide1.jpg) no-repeat center / cover;}
+#wrap > .right > .sec_b > .slide a:nth-child(3){background: url(../images/slide2.jpg) no-repeat center / cover;}
+
+/* section_c */
+#wrap > .right > .sec_c{height: 200px;background: #a6F}
+/* section_d */
+#wrap > .right > .sec_d{height: 100px;background: #f6F}

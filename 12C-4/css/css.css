@@ -1,0 +1,82 @@
+@charset "utf-8";
+*{margin: 0;padding: 0;color: #222328;}
+a{text-decoration: none;color: #222328;}
+ul,li{list-style: none;}
+body{background: #fff;position: relative}
+
+
+/* modal_popup*/
+.m_popup{position: fixed;width: 100%;height: 100vh;background: rgba(0,0,0,0.3);display: flex;align-items:center; justify-content: center;z-index: -50;opacity: 0}
+.m_popup > .m_wrap{width: 700px;height: 400px;background: #fff;border: 5px solid #999;box-sizing: border-box;}
+.m_popup > .m_wrap > .title{border-bottom: 5px solid #999;height: 40px;line-height: 40px;}
+.m_popup > .m_wrap > .title p{margin-left: 20px;font-size: 16px;font-weight: bold;display: flex;align-items: center;}
+.m_popup > .m_wrap > .title p::before{content: '';display: inline-block;width: 8px;height: 8px;background: #999;border-radius: 50%;margin-right: 5px;}
+.m_popup > .m_wrap > .content{height: calc(100% - 45px);position: relative}
+.m_popup > .m_wrap > .content p{margin: 10px 25px;font-size: 14px}
+.m_popup > .m_wrap > .content p::after{content: '';display: block;width: 80%;height: 2px;background: #ccc;margin: 5px 0px}
+.m_popup > .m_wrap > .content a{position: absolute;right: 5%;bottom: 10%;padding: 5px 8px;border: 1px solid #999}
+
+
+/* 02076c */
+#wrap{width: 1000px;height: 650px;display: flex;}
+#wrap > .sec_a{width: 250px;height: 100%;display: flex;flex-flow: column;align-items: center;}
+#wrap > .sec_a > .logo_part{width: 200px; height: 100px;display: flex;align-items: center;}
+#wrap > .sec_a > .logo_part > a{width: 100%;height: 40px;display: inline-block;}
+#wrap > .sec_a > .logo_part > a > img{width: 100%;height: 100%;}
+
+#wrap > .sec_a > .menu_part{width: 100%; height: 550px;background: #ccc;display: flex;justify-content: center;}
+#wrap > .sec_a > .menu_part > .main{width: 200px;margin-top: 50px;}
+#wrap > .sec_a > .menu_part > .main > li{width: 100%;height: 30px;background: #333;position: relative;border: 1px solid #fff;box-sizing: border-box;}
+#wrap > .sec_a > .menu_part > .main > li:hover > a{background: #fff;transition: .5s;color: #000;}
+#wrap > .sec_a > .menu_part > .main > li > a{text-align: center;line-height: 30px;display: block;font-size: 14px;transition: .5s;color: #fff}
+#wrap > .sec_a > .menu_part > .main > li > .sub{position: absolute;right: -200px;width: 200px;height: 90px;background: #afa;display: flex;flex-flow: column;top: 0;visibility: hidden;opacity: 0}
+#wrap > .sec_a > .menu_part > .main > li:nth-child(3) > .sub{height: 120px;}
+#wrap > .sec_a > .menu_part > .main > li > .sub li{width: 200px;height: 30px;border: 1px solid #fff;box-sizing: border-box}
+#wrap > .sec_a > .menu_part > .main > li > .sub li:hover a{background: #333;transition: .3s;color: #fff}
+#wrap > .sec_a > .menu_part > .main > li > .sub li a{display: block;width: 100%;height: 100%;background: #999;text-align: center;line-height: 30px;transition: .3s;font-size: 13px}
+
+
+#wrap > .right{width: 750px;height: 100%;}
+#wrap > .right > .sec_b{width: 100%;height: 350px;overflow: hidden;}
+#wrap > .right > .sec_b > .slide{width: 300%;height: 100%;display: flex;}
+#wrap > .right > .sec_b > .slide a{width: 100%;height: 100%;display: inline-block;}
+
+#wrap > .right > .sec_c{width: 100%;height: 200px;display: flex;}
+
+
+#wrap > .right > .sec_c > div {width: 33.3%;height: 100%;display: flex;align-items: center;justify-content: center;}
+
+#wrap > .right > .sec_c > div:not(.c_3) > .c_wrap{width: 95%;height: 95%;background: #fff;border: 2px solid #999;display: flex;flex-flow: column;justify-content: space-around;}
+#wrap > .right > .sec_c > div:not(.c_3) > .c_wrap > .title{width: 100%;height: 30px;border-bottom: 2px solid #999}
+#wrap > .right > .sec_c > div:not(.c_3) > .c_wrap > .title > div{width: 100px;}
+#wrap > .right > .sec_c > div:not(.c_3) > .c_wrap > .title p{display: flex;align-items: center;height: 30px;margin-left: 5px;font-size: 15px;font-weight: 600;}
+#wrap > .right > .sec_c > div:not(.c_3) > .c_wrap > .title p::before{content: '';display: inline-block;width: 5px;height: 5px;background: #999;border-radius: 50%;margin: 0 5px}
+#wrap > .right > .sec_c > .c_1 > .c_wrap > .content {display: flex;flex-flow: column;justify-content: space-around;height: 80%;}
+#wrap > .right > .sec_c > .c_1 > .c_wrap > .content > div{width: 100%;height: 25px;display: flex;position: relative;align-items: center;}
+#wrap > .right > .sec_c > .c_1 > .c_wrap > .content > div > span{font-size: 11px}
+#wrap > .right > .sec_c > .c_1 > .c_wrap > .content > div > a{margin: 0 20px;font-size: 14px;}
+/*#wrap > .right > .sec_c > div:not(.c_3) > .c_wrap > .content a::before{content: '';display: inline-block;width: 4px;height: 4px;background: #999;border-radius: 50%;margin: 0 5px}*/
+#wrap > .right > .sec_c > .c_1 > .c_wrap > .content > div::after{content: '';display: block;width: 90%;height: 2px;background: #999;margin:2px 10px;position: absolute;bottom:-5px;left: 5px;right: 0;}
+
+#wrap > .right > .sec_c > .c_2 > .c_wrap > .content {height: 80%;display: flex;width: 100%;justify-content: space-around;align-items: center;}
+#wrap > .right > .sec_c > .c_2 > .c_wrap > .content > a {width: 30%;height: 50%;display: inline-block;}
+#wrap > .right > .sec_c > .c_2 > .c_wrap > .content > a img{width: 100%;height: 100%;}
+#wrap > .right > .sec_c > .c_3 > .c_wrap {width: 95%;height: 95%;background: #999;border: 2px solid #999}
+#wrap > .right > .sec_c > .c_3 > .c_wrap > a{width: 100%;height: 100%;display: inline-block;}
+#wrap > .right > .sec_c > .c_3 > .c_wrap > a img{width: 100%;height: 100%;}
+
+
+
+
+
+
+#wrap > .right > .sec_d{width: 100%;height: 100px;display: flex;justify-content: space-between;background: #ccc}
+#wrap > .right > .sec_d > .logo_d > a {width: 95%;display: flex;align-items: center;}
+#wrap > .right > .sec_d > .logo_d > a > img{width: 100%;}
+#wrap > .right > .sec_d > div{display: flex;align-items: center;width: 80%;justify-content: center;}
+#wrap > .right > .sec_d > div:not(.copy){width: 20%;}
+#wrap > .right > .sec_d > .copy{font-size: 13px;}
+
+#wrap > .right > .sec_d > .family {display: flex;flex-flow: column;}
+#wrap > .right > .sec_d > .family select,
+#wrap > .right > .sec_d > .family button{width: 80%;}

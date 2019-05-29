@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Vallery Festival</title>
+        <link href="./css/css.css" type="text/css" rel="stylesheet">
+        <script src="./scripts/jquery-3.4.0.js"></script>
+        <script src="./scripts/slide.js"></script>
+        <script src="./scripts/modal.js"></script>
+        <script src="./scripts/menu.js"></script>
+    </head>
+    <body>
+        <div class="m_popup">
+            <div class="m_wrap">
+                <div class="title">
+                    <p>공지사항</p>
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nunc</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nunc</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nunc</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nunc</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nunc</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nunc</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et nunc</p>
+                    <a href="#" onclick="m_close()">닫기 X</a>
+                </div>
+            </div>
+        </div>
+        <div id="wrap">
+            <div class="sec_a">
+                <div class="logo_part">
+                    <a href="#">
+                        <img src="images/logo.png" alt="로고">
+                    </a>
+                </div>
+                <div class="menu_part">
+                    <ul class="main">
+                        <li>
+                            <a href="#">축제소개</a>
+                            <ul class="sub">
+                                <li><a href="#">Festival 소개</a></li>
+                                <li><a href="#">행사장 안내</a></li>
+                                <li><a href="#">조직위원회</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">예약안내</a>
+                            <ul class="sub">
+                                <li><a href="#">예약하기</a></li>
+                                <li><a href="#">예약확인 / 취소</a></li>
+                                <li><a href="#">단체예약문의</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">아티스트</a>
+                            <ul class="sub">
+                                <li><a href="#">고릴라즈</a></li>
+                                <li><a href="#">메이저 레이저</a></li>
+                                <li><a href="#">아우스게인</a></li>
+                                <li><a href="#">타임로드</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">커뮤니티</a>
+                            <ul class="sub">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">사진갤러리</a></li>
+                                <li><a href="#">영상갤러리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="sec_b">
+                    <div class="slide">
+                        <a href="#">
+                            <img src="images/slide1.jpg" alt="슬라이드이미지1">
+                        </a>
+                        <a href="#">
+                            <img src="images/slide2.jpg" alt="슬라이드이미지2">
+                        </a>
+                        <a href="#">
+                            <img src="images/slide3.jpg" alt="슬라이드이미지3">
+                        </a>
+                    </div>
+                </div>
+                <div class="sec_c">
+                    <div class="c_1">
+                        <div class="c_wrap">
+                            <div class="title">
+                                <div>
+                                    <p>공지사항</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <a href="#" onclick="m_open()">lorem ipsum dolor...</a>
+                                    <span>2019.05.31</span>
+                                </div>
+                                <div>
+                                    <a href="#">lorem ipsum dolor...</a>
+                                    <span>2019.05.31</span>
+                                </div>
+                                <div>
+                                    <a href="#">lorem ipsum dolor...</a>
+                                    <span>2019.05.31</span>
+                                </div>
+                                <div>
+                                    <a href="#">lorem ipsum dolor...</a>
+                                    <span>2019.05.31</span>
+                                </div>
+                                <div>
+                                    <a href="#">lorem ipsum dolor...</a>
+                                    <span>2019.05.31</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_2">
+                        <div class="c_wrap">
+                            <div class="title">
+                                <div>
+                                    <p>갤러리</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <a href="#">
+                                    <img src="images/gall1.jpg" alt="갤러리_사진1">
+                                </a>
+                                <a href="#">
+                                    <img src="images/gall2.jpg" alt="갤러리_사진2">
+                                </a>
+                                <a href="#">
+                                    <img src="images/gall3.jpg" alt="갤러리_사진3">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_3">
+                        <div class="c_wrap">
+                            <a href="#">
+                                <img src="images/go.jpg" alt="바로가기_이미지">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec_d">
+                    <div class="logo_d">
+                        <a href="#"><img src="./images/logo_gray.png" alt="회색로고"></a>
+                    </div>
+                    <div class="copy">Copyright &copy; 2019 snipe ALLRIGHT RESERVED.</div>
+                    <div class="family">
+                        <select id="fam_">
+                            <option value="one">FAMILY_1</option>
+                            <option value="two">FAMILY_2</option>
+                            <option value="three">FAMILY_3</option>
+                        </select>
+                        <button>
+                            바로가기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
