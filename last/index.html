@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>last</title>
+        <script src="./jquery-1.12.4.js"></script>
+        <style>
+            *{margin: 0;padding: 0;}
+            body{display: flex;justify-content: center;}
+            .box{width: 250px;height: 500px;background: #afa;display: flex;justify-content: center;}
+            .box > .menu{width: 200px;height: 400px;background: #a9a}
+            .box > .menu > div{width: 100%;height: 30px;background: #ccc;overflow: hidden;}
+            .box > .menu > div > a{width: 100%;height: 30px;display: block;background: #999;text-align: center;line-height: 30px;}
+            .box > .menu > div > .sub{width: 100%;height: 120px;background: #ddd;display: flex;flex-flow: column;}
+            .box > .menu > div > .sub a{width: 100%;height: 30px; text-align: center;line-height: 30px;}
+            a{text-decoration: none; }
+        </style>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+                var m = $(".box .menu > div");
+                m.mouseover(function(){
+                    $(this).css({
+                        'height':'120px',
+                        'transition':'.3s',
+                    })
+                    $(this).children('a').css({
+                        'background':'#faa',
+                        'transition':'.3s'
+                    })
+                })
+                m.mouseout(function(){
+                    $(this).css({
+                        'height':'30px',
+                        'transition':'.3s'
+                    })
+                    $(this).children('a').css({
+                        'background':'#999',
+                        'transition':'.3s'
+                    })
+                })
+                
+            })
+        </script>
+        <div class="box">
+            <div class="menu">
+                <div class="m1">
+                    <a href="#">MENU</a>
+                    <div class="sub">
+                        <a href="#">sub1</a>
+                        <a href="#">sub2</a>
+                        <a href="#">sub3</a>
+                        <a href="#">sub4</a>
+                    </div>
+                </div>
+                <div class="m2">
+                    <a href="#">MENU</a>
+                    <div class="sub">
+                        <a href="#">sub1</a>
+                        <a href="#">sub2</a>
+                        <a href="#">sub3</a>
+                        <a href="#">sub4</a>
+                    </div>
+                </div>
+                <div class="m3">
+                    <a href="#">MENU</a>
+                    <div class="sub">
+                        <a href="#">sub1</a>
+                        <a href="#">sub2</a>
+                        <a href="#">sub3</a>
+                        <a href="#">sub4</a>
+                    </div>
+                </div>
+                <div class="m4">
+                    <a href="#">MENU</a>
+                    <div class="sub">
+                        <a href="#">sub1</a>
+                        <a href="#">sub2</a>
+                        <a href="#">sub3</a>
+                        <a href="#">sub4</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
